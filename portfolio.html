@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-sprinkles"></div>
 
     <header>
         <div class="container">
-            <h1>Nandni</h1>
+            <h1 class="logo">Nandni</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#education">Education</a></li> <!-- ✅ New -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -23,80 +26,137 @@
     </header>
 
     <section id="hero" class="hero">
-        <div class="container">
+        <div class="container hero-center">
             <div class="hero-content">
-                <h2>I Build Modern Web Applications.</h2>
-                <p>A dedicated Full-Stack Developer specializing in the MERN Stack and PHP, currently advancing my skills at Lovely Professional University.</p>
-                <a href="#portfolio" class="cta-button">View My Work</a>
+                <h2>Hello, I'm <span class="name-highlight">Nandni</span></h2>
+                <p>I build modern and intuitive web applications with clean UI and scalable backend logic. Currently pursuing MCA at Lovely Professional University, specializing in Full Stack Development with MERN & PHP.</p>
+      
+                <a href="resume.pdf" class="cta-button" target="_blank">Download CV</a>
             </div>
             <div class="hero-image">
-                <img src="nandni.png" alt="Nandni's Professional Photo">
+                <img src="nand.png" alt="Nandni's Photo">
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about reveal">
         <div class="container">
-            <h3>About Nandni</h3>
-            <p>I am currently pursuing a Masters in Computer Applications (MCA) at Lovely Professional University (LPU). I hold a foundational degree in Software Development from Lyallpur Khalsa College, where I developed a strong academic base.</p>
-            <p>My passion lies in creating robust and efficient web solutions. I enjoy taking a project from concept to deployment, focusing on clean code and user experience.</p>
-            <p>I am seeking opportunities to apply my full-stack knowledge and contribute to innovative tech teams.</p>
+            <h3>About Me</h3>
+            <p>Hello! I'm <strong>Nandni</strong>, a dedicated and enthusiastic Full Stack Developer with a strong interest in building dynamic, user-friendly, and visually appealing web applications. I enjoy turning ideas into real, functional digital products.</p>
+
+            <p>Currently, I am pursuing my <strong>MCA from Lovely Professional University</strong>, where I am strengthening my technical foundation while working on real projects involving MERN Stack, PHP, and database systems. My previous academic background in Computer Science has helped me develop strong analytical and logical problem-solving skills.</p>
+
+            <p>I am passionate about learning new technologies, improving user experiences, and writing clean, efficient code. I enjoy collaborating with teams, adapting to new challenges, and continuously leveling up my skills.</p>
+
+            <p>I am actively seeking opportunities such as internships, freelance work, and full-time positions where I can contribute, grow, and bring value to innovative development teams.</p>
         </div>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills" class="skills reveal">
         <div class="container">
-            <h3 >Core Skills & Technologies</h3>
+            <h3>Skills & Technologies</h3>
             <div class="skills-grid">
-                <span>MERN Stack (MongoDB, Express, React, Node.js)</span>
-                <span>Frontend Development (HTML, CSS, JavaScript)</span>
-                  <span>Basic knowledge of C++,Python,PHP</span>
-                <span>Databases(Oracle,MySQL)</span>
-                <span>Responsive Design</span>
+                <span>MERN Stack</span>
+                <span>HTML, CSS, JavaScript</span>
+                <span>PHP • Python • C++</span>
+                <span>MySQL • Oracle • MongoDB</span>
+                <span>REST APIs</span>
+                <span>Responsive UI / UX</span>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
+    <!-- ✅ CERTIFICATES SECTION -->
+    <section id="certificates" class="certificates reveal">
         <div class="container">
-            <h3>Featured Projects</h3>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h4>MERN E-commerce Platform</h4>
-                    <p>A full-stack application demonstrating user authentication, product listings, and a shopping cart functionality built with React and a Node.js/Express backend.</p>
-                    <a href="link-to-live-project" target="_blank">View Code / Demo</a>
+            <h3>Certificates & Achievements</h3>
+            <div class="certificate-grid">
+                <div class="certificate-card">
+                    <h4>MERN Stack Development</h4>
+                    <p>Issued by: Techcadd Jalandhar</p>
+                    <a href="techcadd.pdf" target="_blank">View Certificate</a>
                 </div>
-                <div class="project-card">
-                    <h4>PHP & MySQL Content Management System (CMS)</h4>
-                    <p>Developed a simple CMS using native PHP for backend logic and MySQL for data management, showcasing CRUD operations and secure user sessions.</p>
-                    <a href="link-to-live-project" target="_blank">View Code / Demo</a>
-                </div>
-                <div class="project-card">
-                    <h4>Modern Responsive Landing Page</h4>
-                    <p>A design-focused project using advanced CSS (Flexbox/Grid) and pure JavaScript for animations, ensuring perfect responsiveness across all devices.</p>
-                    <a href="link-to-live-project" target="_blank">View Code / Demo</a>
+
+                <div class="certificate-card">
+                    <h4>Hackathon</h4>
+                    <p>Issued by: LPU / EventEye / GeeksforGeeks</p>
+                    <a href="12515648.pdf" target="_blank">View Certificate</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- 🎓 EDUCATION SECTION -->
+    <section id="education" class="education reveal">
         <div class="container">
-            <h3>Get In Touch</h3>
-            <p>I am available for freelance work and new job opportunities. Let's build something impactful together!</p>
+            <h3>Education</h3>
+            <div class="education-list">
+                <div class="edu-item">
+                    <h4>Master of Computer Applications (MCA)</h4>
+                    <p><strong>Lovely Professional University (LPU)</strong>, Punjab — <em>Currently Pursuing</em></p>
+                </div>
+                <div class="edu-item">
+                    <h4>Bachelor of Computer Applications (BCA)</h4>
+                    <p><strong>Lyallpur Khalsa College</strong>, Jalandhar — <em>Completed</em></p>
+                </div>
+                <div class="edu-item">
+                    <h4>12th - Senior Secondary Education</h4>
+                    <p><strong>Govt. Model Senior Secondary School</strong>, Fatehpur, Kangra, Himachal Pradesh</p>
+                </div>
+                <div class="edu-item">
+                    <h4>10th - Secondary Education</h4>
+                    <p><strong>Govt. Senior Secondary School</strong>, Badiyali, Himachal Pradesh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📩 CONTACT ME FORM -->
+    <section id="contact" class="contact reveal">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <p>Feel free to reach out for collaborations, projects, or opportunities!</p>
+
+            <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+
             <div class="contact-links">
-                  <a href="mailto:snandni034@gmail.com">Email Me</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="mailto:snandni034@gmail.com">📧 Email</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">🐙 GitHub</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Nandni. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Nandni. Built with ❤️ and dedication.</p>
     </footer>
 
+    <script>
+        // Fade-in on scroll effect
+        const reveals = document.querySelectorAll('.reveal');
+        window.addEventListener('scroll', () => {
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) el.classList.add('show');
+            });
+        });
+    </script>
 </body>
 </html>
